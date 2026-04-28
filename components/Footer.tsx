@@ -70,9 +70,12 @@ export default function Footer() {
         <div className="relative overflow-hidden border-b hair py-14 md:py-20">
           <h2
             aria-hidden="true"
-            className="display-tight select-none font-display text-[22vw] leading-[0.82] tracking-tightest text-ink-900"
+            className="display-tight select-none font-display leading-[0.82] tracking-tightest text-ink-900 text-[clamp(64px,16vw,260px)]"
           >
-            Handwerk<span className="italic font-normal text-accent">·</span>Atelier
+            Handwerk
+            <span className="ml-[0.12em] inline-block h-[0.16em] w-[0.16em] translate-y-[-0.55em] rounded-full bg-accent align-baseline" aria-hidden />
+            <br />
+            <span className="italic font-normal">Atelier</span>
           </h2>
         </div>
 
