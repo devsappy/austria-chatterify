@@ -40,7 +40,7 @@ export default function BranchenPage() {
             <div className="col-span-12 md:col-span-9">
               <h1 className="display-tight font-display text-5xl leading-[1.0] tracking-tightest text-ink-900 sm:text-7xl md:text-[112px]">
                 Websites für{" "}
-                <span className="italic font-normal text-accent">
+                <span className="font-normal text-accent">
                   jede Branche
                 </span>
                 .

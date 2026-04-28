@@ -24,7 +24,7 @@ export default function Nav() {
               Handwerk
             </span>
             <span className="text-accent">·</span>
-            <span className="truncate font-display italic text-[15px] tracking-tight text-ink-700 sm:text-[18px]">
+            <span className="truncate font-display text-[15px] tracking-tight text-ink-700 sm:text-[18px]">
               Atelier
             </span>
           </span>
@@ -51,7 +51,7 @@ export default function Nav() {
             className="hidden h-10 items-center gap-2 border hair bg-ink-900 px-4 text-[13px] font-medium tracking-tight text-paper transition hover:bg-ink-800 sm:inline-flex sm:px-5"
           >
             Intro buchen
-            <span className="font-mono text-[10px] text-ink-300">↗</span>
+            <span className="font-mono text-[10px] text-paper/60">↗</span>
           </a>
 
           <details className="relative md:hidden">
@@ -79,7 +79,7 @@ export default function Nav() {
                     className="flex items-center justify-between gap-3 bg-ink-900 px-4 py-3 text-[13px] font-medium text-paper"
                   >
                     Intro buchen
-                    <span className="font-mono text-[10px] text-ink-300">↗</span>
+                    <span className="font-mono text-[10px] text-paper/60">↗</span>
                   </a>
                 </li>
               </ul>

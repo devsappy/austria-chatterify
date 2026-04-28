@@ -1,20 +1,14 @@
 import type { Metadata, Viewport } from "next";
-import { Inter, Fraunces, JetBrains_Mono } from "next/font/google";
+import { Raleway, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import JsonLd from "@/components/JsonLd";
 import { SITE } from "@/lib/seo-data";
 
-const inter = Inter({
+const raleway = Raleway({
   subsets: ["latin"],
-  variable: "--font-inter",
+  variable: "--font-raleway",
   display: "swap",
-});
-
-const display = Fraunces({
-  subsets: ["latin"],
-  variable: "--font-display",
-  display: "swap",
-  axes: ["SOFT", "opsz"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
 });
 
 const mono = JetBrains_Mono({
@@ -46,7 +40,7 @@ const KEYWORDS = [
 ];
 
 export const viewport: Viewport = {
-  themeColor: "#0b0b09",
+  themeColor: "#000000",
   width: "device-width",
   initialScale: 1,
 };
@@ -143,7 +137,7 @@ export default function RootLayout({
   return (
     <html
       lang="de-AT"
-      className={`${inter.variable} ${display.variable} ${mono.variable}`}
+      className={`${raleway.variable} ${mono.variable}`}
     >
       <head>
         <JsonLd />

@@ -90,7 +90,7 @@ export default function BranchePage({ params }: { params: { branche: string } })
               <h1 className="display-tight mt-6 font-display text-5xl leading-[1.0] tracking-tightest text-ink-900 sm:text-7xl md:text-[112px]">
                 Webdesign
                 <br />
-                <span className="italic font-normal text-accent">
+                <span className="font-normal text-accent">
                   {ind.plural}
                 </span>
                 .

@@ -41,8 +41,8 @@ export default function RegionenPage() {
             <div className="col-span-12 md:col-span-9">
               <h1 className="display-tight font-display text-5xl leading-[1.0] tracking-tightest text-ink-900 sm:text-7xl md:text-[112px]">
                 Webdesign in{" "}
-                <span className="italic font-normal text-accent">Österreich</span>
-                <br />& <span className="italic font-normal text-accent">Deutschland</span>.
+                <span className="font-normal text-accent">Österreich</span>
+                <br />& <span className="font-normal text-accent">Deutschland</span>.
               </h1>
               <p className="mt-8 max-w-2xl text-lg leading-relaxed text-ink-600">
                 Wir bauen Websites für Handwerksbetriebe, Cafés, Restaurants,

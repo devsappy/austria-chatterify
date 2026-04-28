@@ -31,7 +31,7 @@ export default function SEOFooter() {
           <div className="col-span-12 md:col-span-9">
             <h2 className="display-tight font-display text-4xl leading-[1.02] tracking-tightest text-ink-900 sm:text-5xl md:text-7xl">
               Vor Ort in{" "}
-              <span className="italic font-normal text-accent">
+              <span className="font-normal text-accent">
                 {CITIES.length} Städten
               </span>
               .
@@ -74,7 +74,7 @@ export default function SEOFooter() {
                   <div className="font-display text-base leading-tight tracking-tight sm:text-xl">
                     Webdesign {ind.name}
                     <br />
-                    <span className="italic text-accent">{city.name}</span>
+                    <span className="text-accent">{city.name}</span>
                   </div>
                 </a>
               );

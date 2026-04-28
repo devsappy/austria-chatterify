@@ -112,7 +112,7 @@ export default function CityPage({ params }: { params: { stadt: string } }) {
               <h1 className="display-tight mt-6 font-display text-5xl leading-[1.0] tracking-tightest text-ink-900 sm:text-7xl md:text-[120px]">
                 Webdesign
                 <br />
-                <span className="italic font-normal text-accent">{city.name}</span>.
+                <span className="font-normal text-accent">{city.name}</span>.
               </h1>
               <p className="mt-10 max-w-2xl text-lg leading-relaxed text-ink-600">
                 Wir bauen Websites für Handwerksbetriebe, Cafés, Restaurants,

@@ -29,17 +29,12 @@ export default function Process() {
   return (
     <section id="ablauf" className="border-b hair">
       <div className="mx-auto max-w-[1400px] px-4 sm:px-6">
-        <div className="grid grid-cols-12 gap-0 border-b hair py-3 font-mono text-[10px] uppercase tracking-[0.14em] text-ink-500 sm:text-[11px]">
-          <div className="col-span-6">§ 04 — Ablauf</div>
-          <div className="col-span-6 text-right">14 Tage · 4 Schritte</div>
-        </div>
-
         <div className="grid grid-cols-12 gap-0 border-b hair py-10 sm:py-14 md:py-20">
           <div className="col-span-12 md:col-span-9">
             <h2 className="display-tight font-display text-4xl leading-[1.02] tracking-tightest text-ink-900 sm:text-5xl md:text-7xl">
               Von der ersten E-Mail
               <br />
-              zur <span className="italic font-normal text-accent">Live-Website</span> in 14 Tagen.
+              zur <span className="font-normal text-accent">Live-Website</span> in 14 Tagen.
             </h2>
           </div>
         </div>

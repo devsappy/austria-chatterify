@@ -4,9 +4,9 @@
 
 :root {
   color-scheme: light;
-  --paper: #efece4;
-  --ink: #0b0b09;
-  --hair: rgba(11, 11, 9, 0.14);
+  --paper: #ffffff;
+  --ink: #000000;
+  --hair: rgba(0, 0, 0, 0.22);
 }
 
 html,
@@ -28,6 +28,37 @@ body {
 
 .hair {
   border-color: var(--hair);
+}
+
+.frame {
+  position: relative;
+  border: 1.5px solid var(--hair);
+  background:
+    linear-gradient(135deg, rgba(143, 171, 212, 0.06), rgba(74, 112, 169, 0.02)),
+    var(--paper);
+}
+
+.frame::before,
+.frame::after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-color: var(--ink);
+  border-style: solid;
+  pointer-events: none;
+}
+
+.frame::before {
+  top: -1.5px;
+  left: -1.5px;
+  border-width: 1.5px 0 0 1.5px;
+}
+
+.frame::after {
+  bottom: -1.5px;
+  right: -1.5px;
+  border-width: 0 1.5px 1.5px 0;
 }
 
 .editorial-grid {

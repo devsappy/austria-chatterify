@@ -33,21 +33,16 @@ export default function Services() {
   return (
     <section id="leistungen" className="border-b hair bg-ink-900 text-paper">
       <div className="mx-auto max-w-[1400px] px-4 sm:px-6">
-        <div className="grid grid-cols-12 gap-0 border-b border-white/10 py-3 font-mono text-[10px] uppercase tracking-[0.14em] text-ink-400 sm:text-[11px]">
-          <div className="col-span-6">§ 03 — Leistungen</div>
-          <div className="col-span-6 text-right">Vier Bausteine</div>
-        </div>
-
         <div className="grid grid-cols-12 gap-0 border-b border-white/10 py-10 sm:py-14 md:py-20">
           <div className="col-span-12 md:col-span-8">
             <h2 className="display-tight font-display text-4xl leading-[1.02] tracking-tightest sm:text-5xl md:text-7xl">
               Vier klare Bausteine.
               <br />
-              <span className="italic font-normal text-accent-300">Keine Geheimsprache.</span>
+              <span className="font-normal text-accent-300">Keine Geheimsprache.</span>
             </h2>
           </div>
           <div className="col-span-12 mt-8 md:col-span-4 md:col-start-9 md:mt-0">
-            <p className="max-w-sm text-[15px] leading-relaxed text-ink-300">
+            <p className="max-w-sm text-[15px] leading-relaxed text-paper/75">
               Sie wählen, was Sie brauchen — vom einseitigen Auftritt bis zur
               laufenden Betreuung. Alles baut aufeinander auf.
             </p>
@@ -66,21 +61,21 @@ export default function Services() {
                 idx === 2 ? "md:border-b-0" : "",
               ].join(" ")}
             >
-              <div className="flex items-center justify-between font-mono text-[10px] uppercase tracking-[0.18em] text-ink-400">
+              <div className="flex items-center justify-between font-mono text-[10px] uppercase tracking-[0.18em] text-paper/60">
                 <span>{s.n}</span>
                 <span>{s.label}</span>
               </div>
               <h3 className="font-display text-3xl leading-[1.05] tracking-tight sm:text-4xl md:text-5xl">
                 {s.title}
               </h3>
-              <p className="max-w-md text-[15px] leading-relaxed text-ink-300">
+              <p className="max-w-md text-[15px] leading-relaxed text-paper/75">
                 {s.body}
               </p>
               <div className="mt-auto flex flex-wrap gap-2 border-t border-white/10 pt-5">
                 {s.tags.map((t) => (
                   <span
                     key={t}
-                    className="border border-white/15 px-2.5 py-1 font-mono text-[10px] uppercase tracking-[0.16em] text-ink-200"
+                    className="border border-white/15 px-2.5 py-1 font-mono text-[10px] uppercase tracking-[0.16em] text-paper/80"
                   >
                     {t}
                   </span>

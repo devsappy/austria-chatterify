@@ -29,11 +29,6 @@ export default function FAQ() {
   return (
     <section className="border-b hair">
       <div className="mx-auto max-w-[1400px] px-4 sm:px-6">
-        <div className="grid grid-cols-12 gap-0 border-b hair py-3 font-mono text-[10px] uppercase tracking-[0.14em] text-ink-500 sm:text-[11px]">
-          <div className="col-span-6">§ 07 — Häufige Fragen</div>
-          <div className="col-span-6 text-right">Sechs Antworten</div>
-        </div>
-
         <div className="grid grid-cols-12 gap-0">
           <div className="col-span-12 border-b hair p-6 sm:p-8 md:col-span-4 md:border-b-0 md:border-r md:p-12">
             <h2 className="display-tight font-display text-3xl leading-[1.05] tracking-tightest text-ink-900 sm:text-5xl md:text-6xl">
@@ -41,7 +36,7 @@ export default function FAQ() {
               <br />
               was Sie vorher
               <br />
-              <span className="italic font-normal text-accent">wissen wollen.</span>
+              <span className="font-normal text-accent">wissen wollen.</span>
             </h2>
             <p className="mt-8 max-w-xs text-[14.5px] leading-relaxed text-ink-600">
               Fehlt etwas? Schreiben Sie uns — wir antworten innerhalb eines

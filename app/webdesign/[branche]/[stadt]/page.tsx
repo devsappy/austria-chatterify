@@ -170,7 +170,7 @@ export default function ComboPage({
               <h1 className="display-tight mt-6 font-display text-5xl leading-[0.98] tracking-tightest text-ink-900 sm:text-6xl md:text-[96px] lg:text-[120px]">
                 Webdesign für
                 <br />
-                <span className="italic font-normal text-accent">
+                <span className="font-normal text-accent">
                   {ind.plural}
                 </span>
                 <br />
@@ -403,7 +403,7 @@ export default function ComboPage({
               <h2 className="display-tight mt-6 font-display text-4xl leading-[1.02] tracking-tightest sm:text-5xl md:text-6xl">
                 Lassen Sie uns über Ihre
                 <br />
-                <span className="italic font-normal text-accent-300">
+                <span className="font-normal text-accent-300">
                   {ind.name}-Website in {city.name}
                 </span>{" "}
                 sprechen.

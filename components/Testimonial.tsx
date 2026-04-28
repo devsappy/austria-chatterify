@@ -2,16 +2,11 @@ export default function Testimonial() {
   return (
     <section className="border-b hair">
       <div className="mx-auto max-w-[1400px] px-4 sm:px-6">
-        <div className="grid grid-cols-12 gap-0 border-b hair py-3 font-mono text-[10px] uppercase tracking-[0.14em] text-ink-500 sm:text-[11px]">
-          <div className="col-span-6">§ 06 — Stimmen</div>
-          <div className="col-span-6 text-right">Aus der Region</div>
-        </div>
-
         <div className="grid grid-cols-12 gap-0">
           <div className="col-span-12 border-b hair py-12 sm:py-16 md:col-span-8 md:border-b-0 md:border-r md:py-24 md:pr-16">
             <div className="mono-label text-ink-500">Zitat · Installateur Wagner</div>
             <blockquote className="display-tight mt-6 font-display text-3xl leading-[1.1] tracking-tightest text-ink-900 sm:mt-8 sm:text-4xl md:text-5xl lg:text-6xl">
-              „Wir bekommen seit dem Launch <span className="italic font-normal text-accent">drei- bis viermal</span>{" "}
+              „Wir bekommen seit dem Launch <span className="font-normal text-accent">drei- bis viermal</span>{" "}
               so viele Anfragen. Das Formular geht direkt aufs Handy — wir können am Bau schon antworten."
             </blockquote>
             <figcaption className="mt-10 flex items-center gap-4 border-t hair pt-6 sm:mt-12 sm:pt-8">
