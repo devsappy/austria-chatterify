@@ -7,19 +7,19 @@ const steps = [
   },
   {
     n: "02",
-    when: "TAG 02–05",
+    when: "TAG 02–03",
     t: "Entwurf",
     d: "Ein erster Designentwurf auf Basis Ihres Logos, Ihrer Fotos und Stimme.",
   },
   {
     n: "03",
-    when: "TAG 06–12",
+    when: "TAG 04–06",
     t: "Umsetzung",
     d: "Wir entwickeln, Sie geben Feedback. Zwei Korrekturrunden inklusive.",
   },
   {
     n: "04",
-    when: "TAG 13–14",
+    when: "TAG 07",
     t: "Launch",
     d: "Übergabe, kurze Einschulung. Danach betreuen wir — wenn gewünscht.",
   },
@@ -34,7 +34,7 @@ export default function Process() {
             <h2 className="display-tight font-display text-4xl leading-[1.02] tracking-tightest text-ink-900 sm:text-5xl md:text-7xl">
               Von der ersten E-Mail
               <br />
-              zur <span className="font-normal text-accent">Live-Website</span> in 14 Tagen.
+              zur <span className="font-normal text-accent">Live-Website</span> in 7 Tagen.
             </h2>
           </div>
         </div>
@@ -62,11 +62,6 @@ export default function Process() {
               <p className="text-[14.5px] leading-relaxed text-ink-600">
                 {s.d}
               </p>
-              <div className="mt-auto border-t hair pt-5">
-                <span className="font-mono text-[10px] uppercase tracking-[0.18em] text-ink-400">
-                  Phase {s.n} / 04
-                </span>
-              </div>
             </li>
           ))}
         </ol>

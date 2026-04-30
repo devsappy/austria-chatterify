@@ -25,7 +25,7 @@ export default function Hero() {
               <p className="text-[15px] leading-relaxed text-ink-700">
                 Ein kleines Atelier aus Wien und München. Wir bauen sorgfältige,
                 schnelle Websites für Handwerksbetriebe, Cafés und Restaurants —
-                individuell, in der EU gehostet, in 14&nbsp;Tagen online.
+                individuell, in der EU gehostet, in 7&nbsp;Tagen online.
               </p>
             </div>
 

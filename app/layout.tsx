@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     template: "%s · Handwerk · Atelier",
   },
   description:
-    "Webdesign & Webentwicklung für Handwerksbetriebe, Cafés, Restaurants und Hotels in Wien, Graz, Salzburg, Linz, Innsbruck, München, Berlin, Hamburg und ganz DACH. Individuell, DSGVO-konform, EU-Hosting, in 14 Tagen online.",
+    "Webdesign & Webentwicklung für Handwerksbetriebe, Cafés, Restaurants und Hotels in Wien, Graz, Salzburg, Linz, Innsbruck, München, Berlin, Hamburg und ganz DACH. Individuell, DSGVO-konform, EU-Hosting, in 7 Tagen online.",
   applicationName: SITE.name,
   keywords: KEYWORDS,
   authors: [{ name: SITE.brand, url: SITE.url }],

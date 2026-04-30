@@ -21,7 +21,7 @@ export async function generateMetadata(
   if (!city) return {};
   const country = COUNTRY_LABEL[city.country];
   const title = `Webdesign ${city.name} — Websites für lokale Betriebe in ${city.name} & ${city.region}`;
-  const description = `Webdesign, Webentwicklung und lokales SEO für Handwerker, Cafés, Restaurants, Hotels und Dienstleister in ${city.name} (${city.region}, ${country}). Individuelle Websites, DSGVO-konform, EU-Hosting, in 14 Tagen online.`;
+  const description = `Webdesign, Webentwicklung und lokales SEO für Handwerker, Cafés, Restaurants, Hotels und Dienstleister in ${city.name} (${city.region}, ${country}). Individuelle Websites, DSGVO-konform, EU-Hosting, in 7 Tagen online.`;
   const canonical = `/regionen/${city.slug}`;
 
   return {

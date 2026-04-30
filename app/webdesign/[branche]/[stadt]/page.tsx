@@ -27,7 +27,7 @@ export async function generateMetadata(
   const title = `Webdesign ${ind.name} ${city.name} — Website für ${ind.plural} in ${city.name}`;
   const description = `Individuelle Website für Ihren ${ind.name}-Betrieb in ${city.name} (${city.region}, ${country}). Inkl. ${ind.features
     .slice(0, 3)
-    .join(", ")}. Lokales SEO, DSGVO, EU-Hosting — in 14 Tagen online.`;
+    .join(", ")}. Lokales SEO, DSGVO, EU-Hosting — in 7 Tagen online.`;
 
   const canonical = `/webdesign/${ind.slug}/${city.slug}`;
 
@@ -182,7 +182,7 @@ export default function ComboPage({
                 allem, was Ihr Betrieb braucht:{" "}
                 {ind.features.slice(0, 3).join(", ").toLowerCase()}. Lokales SEO
                 auf {city.name} ausgerichtet, DSGVO-konform, EU-Hosting, in
-                14&nbsp;Tagen online.
+                7&nbsp;Tagen online.
               </p>
               <div className="mt-10 flex flex-wrap gap-3">
                 <a
@@ -209,7 +209,7 @@ export default function ComboPage({
                   ["Land", country],
                   ["PLZ-Bereich", `${city.postalPrefix}XXX`],
                   ["Koordinaten", `${city.lat.toFixed(2)}° N · ${city.lon.toFixed(2)}° E`],
-                  ["Lieferzeit", "14 Tage"],
+                  ["Lieferzeit", "7 Tage"],
                   ["Hosting", "EU (Frankfurt · Wien)"],
                 ].map(([k, v]) => (
                   <div
@@ -297,15 +297,15 @@ export default function ComboPage({
                   Ablauf für Ihren {ind.name}-Betrieb in {city.name}
                 </h2>
                 <span className="font-mono text-[11px] uppercase tracking-[0.18em] text-ink-500">
-                  14 Tage
+                  7 Tage
                 </span>
               </div>
               <ol className="grid grid-cols-1 gap-0 border-t hair md:grid-cols-4">
                 {[
                   { n: "01", t: "Gespräch", w: "TAG 01", d: `30 min. Telefon oder vor Ort in ${city.name}.` },
-                  { n: "02", t: "Entwurf", w: "TAG 02–05", d: "Erster Designentwurf auf Basis Ihrer Marke." },
-                  { n: "03", t: "Umsetzung", w: "TAG 06–12", d: "Entwicklung + 2 Korrekturrunden." },
-                  { n: "04", t: "Launch", w: "TAG 13–14", d: "Übergabe, Einschulung, Google-Einreichung." },
+                  { n: "02", t: "Entwurf", w: "TAG 02–03", d: "Erster Designentwurf auf Basis Ihrer Marke." },
+                  { n: "03", t: "Umsetzung", w: "TAG 04–06", d: "Entwicklung + 2 Korrekturrunden." },
+                  { n: "04", t: "Launch", w: "TAG 07", d: "Übergabe, Einschulung, Google-Einreichung." },
                 ].map((s, i, arr) => (
                   <li
                     key={s.n}

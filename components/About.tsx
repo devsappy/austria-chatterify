@@ -1,3 +1,5 @@
+import AboutGallery from "./AboutGallery";
+
 export default function About() {
   return (
     <section id="ueber-uns" className="relative border-b hair">
@@ -78,6 +80,8 @@ export default function About() {
             </div>
           </aside>
         </div>
+
+        <AboutGallery />
 
         {/* closing line */}
         <div className="border-t hair py-12 sm:py-16 md:py-20">
