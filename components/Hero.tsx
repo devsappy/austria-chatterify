@@ -1,12 +1,10 @@
-import HeroLaptopMount from "./HeroLaptopMount";
-
 export default function Hero() {
   return (
     <section className="relative border-b hair">
       <div className="mx-auto max-w-[1400px] px-4 sm:px-6">
         {/* headline */}
         <div className="grid grid-cols-12 gap-0">
-          <div className="relative col-span-12 flex flex-col py-12 sm:py-16 md:col-span-7 md:py-24 md:pr-8 lg:py-28">
+          <div className="relative col-span-12 flex flex-col pb-12 pt-28 sm:pb-16 sm:pt-36 md:col-span-7 md:pb-24 md:pr-8 md:pt-52 lg:pb-28 lg:pt-64">
             <h1 className="display-tight font-display text-[40px] leading-[0.92] tracking-tightest text-ink-900 sm:text-[64px] md:text-[64px] lg:text-[88px] xl:text-[104px]">
               Websites
               <br />
@@ -32,8 +30,40 @@ export default function Hero() {
             </div>
 
             <div className="frame p-3">
-              <div className="border border-ink-900/10">
-                <HeroLaptopMount />
+              <div className="relative border border-ink-900/10">
+                <div
+                  className="relative aspect-[5/4] overflow-hidden bg-ink-900 bg-contain bg-center bg-no-repeat"
+                  style={{ backgroundImage: "url('/micbackground.png')" }}
+                >
+                  <div
+                    aria-hidden
+                    className="absolute inset-0 bg-gradient-to-br from-ink-900/85 via-ink-900/55 to-ink-900/90"
+                  />
+                  <div className="relative flex h-full flex-col justify-between p-5 sm:p-7">
+                    <p className="mono-label text-paper/70">
+                      — Laut &amp; deutlich
+                    </p>
+                    <p className="mt-auto text-right font-display display-tight text-[26px] leading-[0.95] tracking-tightest text-paper sm:text-[32px] lg:text-[38px]">
+                      Die <span className="font-normal italic">beste</span>
+                      <br />
+                      Web-Agentur
+                      <br />
+                      für{" "}
+                      <span className="text-accent-300">Österreich</span>
+                      <br />
+                      &amp;{" "}
+                      <span className="text-accent-300">Deutschland</span>.
+                    </p>
+                    <div className="flex items-center justify-between border-t border-paper/15 pt-3">
+                      <span className="mono-label text-paper/60">
+                        Wien · München
+                      </span>
+                      <span className="mono-label text-accent-300">
+                        Nr. 1 ★
+                      </span>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
 

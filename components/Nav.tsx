@@ -5,7 +5,8 @@ const links = [
   { href: "/branchen", label: "Branchen", idx: "02" },
   { href: "/regionen", label: "Regionen", idx: "03" },
   { href: "/#ablauf", label: "Ablauf", idx: "04" },
-  { href: "/#kontakt", label: "Kontakt", idx: "05" },
+  { href: "/ueber-uns", label: "Über uns", idx: "05" },
+  { href: "/#kontakt", label: "Kontakt", idx: "06" },
 ];
 
 export default function Nav() {

@@ -69,13 +69,6 @@ export default function Industries() {
               Öffnungszeiten. Wir kennen sie und bauen sie sauber ein, ohne dass
               Sie an Details denken müssen.
             </p>
-            <div className="mt-6 flex gap-3 font-mono text-[11px] uppercase tracking-[0.14em] text-ink-500">
-              <span>6 Branchen</span>
-              <span className="text-ink-300">·</span>
-              <span>AT / DE</span>
-              <span className="text-ink-300">·</span>
-              <span>seit 2014</span>
-            </div>
           </div>
         </div>
 

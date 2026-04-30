@@ -28,17 +28,16 @@ export default function Testimonial() {
             {[
               ["4,9 / 5", "127 Google-Bewertungen"],
               ["+280 %", "Anfragen im ersten Quartal"],
-              ["2,3 s", "Ladezeit auf LTE"],
-            ].map(([k, v], i) => (
+            ].map(([k, v], i, arr) => (
               <div
                 key={k}
                 className={[
                   "flex flex-col justify-between gap-6 p-6 sm:gap-8 sm:p-8 md:p-10",
-                  i < 2 ? "border-b hair" : "",
+                  i < arr.length - 1 ? "border-b hair" : "",
                 ].join(" ")}
               >
                 <div className="font-mono text-[10px] uppercase tracking-[0.18em] text-ink-400">
-                  0{i + 1} / 03
+                  0{i + 1} / 0{arr.length}
                 </div>
                 <div>
                   <div className="font-display text-4xl leading-none tracking-tight text-ink-900 sm:text-5xl md:text-6xl">
