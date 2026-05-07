@@ -1,8 +1,8 @@
 import Link from "next/link";
 
 const links = [
-  { href: "/#leistungen", label: "Leistungen", idx: "01" },
-  { href: "/branchen", label: "Branchen", idx: "02" },
+  { href: "/handwerk", label: "Handwerk", idx: "01" },
+  { href: "/gastronomie", label: "Gastronomie", idx: "02" },
   { href: "/regionen", label: "Regionen", idx: "03" },
   { href: "/#ablauf", label: "Ablauf", idx: "04" },
   { href: "/ueber-uns", label: "Über uns", idx: "05" },

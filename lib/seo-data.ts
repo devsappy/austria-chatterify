@@ -129,10 +129,13 @@ export const CITIES: City[] = [
     keywords: ["Karlsruhe", "Baden"] },
 ];
 
+export type IndustryCategory = "handwerk" | "gastronomie";
+
 export type Industry = {
   slug: string;
   name: string;
   plural: string;
+  category: IndustryCategory;
   synonyms: string[];
   keywords: string[];
   features: string[];
@@ -144,6 +147,7 @@ export const INDUSTRIES: Industry[] = [
     slug: "installateur",
     name: "Installateur",
     plural: "Installateure",
+    category: "handwerk",
     synonyms: ["Sanitär", "Heizungsbauer", "Gas-Wasser", "Klempner"],
     keywords: [
       "Webdesign Installateur", "Website Sanitär", "Homepage Heizungsbau",
@@ -156,6 +160,7 @@ export const INDUSTRIES: Industry[] = [
     slug: "elektriker",
     name: "Elektriker",
     plural: "Elektriker",
+    category: "handwerk",
     synonyms: ["Elektroinstallateur", "Elektrotechnik", "Photovoltaik", "PV-Installateur", "E-Check"],
     keywords: [
       "Webdesign Elektriker", "Website Elektrotechnik", "Homepage Photovoltaik",
@@ -168,6 +173,7 @@ export const INDUSTRIES: Industry[] = [
     slug: "dachdecker",
     name: "Dachdecker",
     plural: "Dachdecker",
+    category: "handwerk",
     synonyms: ["Spengler", "Dachbauer", "Flaschner"],
     keywords: ["Webdesign Dachdecker", "Website Spengler", "Homepage Dachbau"],
     features: ["Projekt-Galerie Vorher/Nachher", "Einzugsgebiet auf Karte", "Foto-Anfrage Upload"],
@@ -177,6 +183,7 @@ export const INDUSTRIES: Industry[] = [
     slug: "maler",
     name: "Maler",
     plural: "Maler",
+    category: "handwerk",
     synonyms: ["Anstreicher", "Lackierer", "Malermeister"],
     keywords: ["Webdesign Maler", "Website Lackierer", "Homepage Anstreicher"],
     features: ["Farbwelten-Galerie", "Stundensätze transparent", "Terminanfrage"],
@@ -186,6 +193,7 @@ export const INDUSTRIES: Industry[] = [
     slug: "tischler",
     name: "Tischler",
     plural: "Tischler",
+    category: "handwerk",
     synonyms: ["Schreiner", "Möbeltischler", "Bautischler"],
     keywords: ["Webdesign Tischler", "Website Schreiner", "Homepage Möbelbau"],
     features: ["Werkstatt-Galerie", "Individualanfragen", "3D-Render-Integration"],
@@ -195,6 +203,7 @@ export const INDUSTRIES: Industry[] = [
     slug: "gaertner",
     name: "Gärtner",
     plural: "Gärtner",
+    category: "handwerk",
     synonyms: ["Landschaftsbauer", "GaLaBau", "Gartenpflege"],
     keywords: ["Webdesign Gärtner", "Website Landschaftsbau", "Homepage GaLaBau"],
     features: ["Projekt-Karten", "Saisonkalender", "Pflegeverträge online"],
@@ -204,6 +213,7 @@ export const INDUSTRIES: Industry[] = [
     slug: "friseur",
     name: "Friseur",
     plural: "Friseure",
+    category: "gastronomie",
     synonyms: ["Coiffeur", "Barber", "Barbershop", "Hairstylist"],
     keywords: ["Webdesign Friseur", "Website Barber", "Homepage Coiffeur"],
     features: ["Online-Terminbuchung", "Team-Profile", "Mobile Preisliste"],
@@ -213,6 +223,7 @@ export const INDUSTRIES: Industry[] = [
     slug: "kosmetik",
     name: "Kosmetikstudio",
     plural: "Kosmetikstudios",
+    category: "gastronomie",
     synonyms: ["Nagelstudio", "Beauty-Studio", "Kosmetikerin", "Wimpern-Studio"],
     keywords: ["Webdesign Kosmetikstudio", "Website Nagelstudio", "Homepage Kosmetikerin"],
     features: ["Treatment-Katalog", "Online-Buchung", "Gutschein-Shop"],
@@ -222,6 +233,7 @@ export const INDUSTRIES: Industry[] = [
     slug: "cafe",
     name: "Café",
     plural: "Cafés",
+    category: "gastronomie",
     synonyms: ["Kaffeehaus", "Bäckerei", "Konditorei", "Patisserie", "Konditoreicafé"],
     keywords: ["Webdesign Café", "Website Bäckerei", "Homepage Kaffeehaus", "Konditorei online"],
     features: ["Digitale Speisekarte", "Live-Öffnungszeiten", "Reservierung", "Online-Bestellung"],
@@ -231,6 +243,7 @@ export const INDUSTRIES: Industry[] = [
     slug: "restaurant",
     name: "Restaurant",
     plural: "Restaurants",
+    category: "gastronomie",
     synonyms: ["Gasthaus", "Beisl", "Wirtshaus", "Pizzeria", "Trattoria", "Osteria", "Bistro"],
     keywords: ["Webdesign Restaurant", "Website Gasthaus", "Homepage Pizzeria", "Trattoria online"],
     features: ["Tischreservierung", "Mehrsprachig (DE/EN/IT)", "QR-Speisekarte", "Events online"],
@@ -240,6 +253,7 @@ export const INDUSTRIES: Industry[] = [
     slug: "hotel",
     name: "Hotel",
     plural: "Hotels",
+    category: "gastronomie",
     synonyms: ["Pension", "Gasthof", "Boutique-Hotel", "Frühstückspension", "Ferienwohnung"],
     keywords: ["Webdesign Hotel", "Website Pension", "Homepage Gasthof", "Ferienwohnung online"],
     features: ["Buchungssystem (Booking.com, HotelFriend)", "Zimmer-Galerie", "Mehrsprachig"],
@@ -249,6 +263,7 @@ export const INDUSTRIES: Industry[] = [
     slug: "werkstatt",
     name: "KFZ-Werkstatt",
     plural: "Werkstätten",
+    category: "handwerk",
     synonyms: ["Auto-Werkstatt", "Karosserie", "Autohaus", "Reifenservice"],
     keywords: ["Webdesign Werkstatt", "Website KFZ", "Homepage Autohaus", "Reifenservice online"],
     features: ["Service-Terminbuchung", "Leistungskatalog", "Fahrzeug-Galerie"],
@@ -304,6 +319,10 @@ export function cityBySlug(slug: string) {
 
 export function industryBySlug(slug: string) {
   return INDUSTRIES.find((i) => i.slug === slug);
+}
+
+export function industriesByCategory(category: IndustryCategory) {
+  return INDUSTRIES.filter((i) => i.category === category);
 }
 
 // All long-tail combo pages: industry × city.
