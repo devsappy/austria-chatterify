@@ -7,7 +7,7 @@ const links = [
   { href: "/regionen", label: "Regionen", idx: "03" },
   { href: "/#ablauf", label: "Ablauf", idx: "04" },
   { href: "/ueber-uns", label: "Über uns", idx: "05" },
-  { href: "/#kontakt", label: "Kontakt", idx: "06" },
+  { href: "/kontakt", label: "Kontakt", idx: "06" },
 ];
 
 export default function Nav() {
@@ -49,7 +49,7 @@ export default function Nav() {
 
         <div className="flex flex-none items-center gap-2">
           <a
-            href="#kontakt"
+            href="/kontakt"
             className="hidden h-10 items-center gap-2 border hair bg-ink-900 px-4 text-[13px] font-medium tracking-tight text-paper transition hover:bg-ink-800 sm:inline-flex sm:px-5"
           >
             Intro buchen

@@ -41,7 +41,7 @@ export default function Footer() {
               <li><a href="/#leistungen" className="text-paper/85 hover:text-paper">Leistungen</a></li>
               <li><a href="/branchen" className="text-paper/85 hover:text-paper">Branchen</a></li>
               <li><a href="/regionen" className="text-paper/85 hover:text-paper">Regionen</a></li>
-              <li><a href="/#kontakt" className="text-paper/85 hover:text-paper">Kontakt</a></li>
+              <li><a href="/kontakt" className="text-paper/85 hover:text-paper">Kontakt</a></li>
             </ul>
           </div>
 
@@ -60,7 +60,7 @@ export default function Footer() {
           {/* CTA + social */}
           <div className="col-span-12 md:col-span-4 md:flex md:flex-col md:items-end md:text-right">
             <a
-              href="#kontakt"
+              href="/kontakt"
               className="group inline-flex h-11 items-center gap-3 border border-paper bg-paper px-4 font-mono text-[11px] uppercase tracking-[0.18em] text-ink-900 transition hover:border-ink-900 hover:bg-ink-900 hover:text-paper"
             >
               Intro buchen

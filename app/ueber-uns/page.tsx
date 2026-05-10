@@ -27,13 +27,6 @@ export default function UeberUnsPage() {
         ]}
       />
 
-      <div className="mx-auto max-w-[1400px] px-4 sm:px-6">
-        <div className="grid grid-cols-12 gap-0 border-b hair py-3 font-mono text-[11px] uppercase tracking-[0.14em] text-ink-500">
-          <div className="col-span-6">§ ÜU — Über uns</div>
-          <div className="col-span-6 text-right">Wien · München</div>
-        </div>
-      </div>
-
       <About />
     </PageShell>
   );

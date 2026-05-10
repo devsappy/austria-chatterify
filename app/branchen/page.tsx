@@ -29,13 +29,6 @@ export default function BranchenPage() {
 
       <section className="border-b hair">
         <div className="mx-auto max-w-[1400px] px-6">
-          <div className="grid grid-cols-12 gap-0 border-b hair py-3 font-mono text-[11px] uppercase tracking-[0.14em] text-ink-500">
-            <div className="col-span-6">§ BR — Branchen</div>
-            <div className="col-span-6 text-right">
-              {INDUSTRIES.length} Felder
-            </div>
-          </div>
-
           <div className="grid grid-cols-12 gap-0 border-b hair py-14 md:py-24">
             <div className="col-span-12 md:col-span-9">
               <h1 className="display-tight font-display text-5xl leading-[1.0] tracking-tightest text-ink-900 sm:text-7xl md:text-[112px]">

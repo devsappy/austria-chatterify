@@ -36,11 +36,6 @@ export default function GastronomiePage() {
       {/* Hero — pain-led claim */}
       <section className="border-b hair">
         <div className="mx-auto max-w-[1400px] px-4 sm:px-6">
-          <div className="grid grid-cols-12 gap-0 border-b hair py-3 font-mono text-[11px] uppercase tracking-[0.14em] text-ink-500">
-            <div className="col-span-6">§ GA — Für Gastronomie & Service</div>
-            <div className="col-span-6 text-right">{hospitality.length} Konzepte · AT/DE</div>
-          </div>
-
           <div className="grid grid-cols-12 gap-0 py-12 sm:py-16 md:py-24 lg:py-28">
             <div className="col-span-12 md:col-span-8">
               <h1 className="display-tight font-display text-[44px] leading-[0.94] tracking-tightest text-ink-900 sm:text-6xl md:text-[88px] lg:text-[104px]">

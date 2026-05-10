@@ -37,7 +37,7 @@ const sections: Section[] = [
   { label: "Regionen", href: "/regionen" },
   { label: "Ablauf", href: "/#ablauf" },
   { label: "Über uns", href: "/ueber-uns" },
-  { label: "Kontakt", href: "/#kontakt" },
+  { label: "Kontakt", href: "/kontakt" },
 ];
 
 export default function MobileMenu() {
@@ -112,7 +112,7 @@ export default function MobileMenu() {
             </span>
 
             <a
-              href="/#kontakt"
+              href="/kontakt"
               onClick={close}
               className="group inline-flex h-9 items-center gap-2 border hair bg-ink-900 px-3 text-[12px] font-medium tracking-tight text-paper transition hover:bg-ink-800"
             >

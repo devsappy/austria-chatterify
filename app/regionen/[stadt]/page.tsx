@@ -97,13 +97,6 @@ export default function CityPage({ params }: { params: { stadt: string } }) {
 
       <section className="border-b hair">
         <div className="mx-auto max-w-[1400px] px-6">
-          <div className="grid grid-cols-12 gap-0 border-b hair py-3 font-mono text-[11px] uppercase tracking-[0.14em] text-ink-500">
-            <div className="col-span-6">§ REG — {city.region}</div>
-            <div className="col-span-6 text-right">
-              N {city.lat.toFixed(2)}° · E {city.lon.toFixed(2)}°
-            </div>
-          </div>
-
           <div className="grid grid-cols-12 gap-0 border-b hair py-14 md:py-24">
             <div className="col-span-12 md:col-span-9">
               <p className="mono-label text-ink-500">
