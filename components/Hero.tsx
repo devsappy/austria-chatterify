@@ -69,10 +69,10 @@ export default function Hero() {
 
             <a
               href="#kontakt"
-              className="group inline-flex h-12 items-center justify-between border hair bg-ink-900 px-4 text-[13px] font-medium text-paper transition hover:bg-ink-800"
+              className="group inline-flex h-20 items-center justify-between border hair bg-ink-900 px-5 text-[15px] font-medium text-paper transition hover:bg-ink-800 sm:h-24 sm:px-6 sm:text-base"
             >
               Kostenloses Gespräch buchen
-              <span className="font-mono text-[11px] text-paper/60 transition group-hover:translate-x-0.5 group-hover:text-paper">
+              <span className="font-mono text-sm text-paper/60 transition group-hover:translate-x-0.5 group-hover:text-paper">
                 ↗
               </span>
             </a>

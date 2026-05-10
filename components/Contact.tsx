@@ -70,7 +70,7 @@ export default function Contact() {
                 href={BOOKING_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group inline-flex h-16 items-center justify-between border border-white/20 bg-paper px-6 text-ink-900 transition hover:bg-accent-300"
+                className="group inline-flex h-24 items-center justify-between border border-white/20 bg-paper px-6 text-ink-900 transition hover:bg-accent-300 sm:h-28"
               >
                 <span className="text-base font-medium tracking-tight sm:text-lg">
                   Termin buchen

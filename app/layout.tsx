@@ -139,10 +139,10 @@ export default function RootLayout({
       lang="de-AT"
       className={`${raleway.variable} ${mono.variable}`}
     >
-      <head>
+      <body className="font-sans">
         <JsonLd />
-      </head>
-      <body className="font-sans">{children}</body>
+        {children}
+      </body>
     </html>
   );
 }

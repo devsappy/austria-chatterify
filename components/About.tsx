@@ -1,4 +1,62 @@
-import AboutGallery from "./AboutGallery";
+const offerings = [
+  {
+    tag: "KI",
+    title: "Voice-Agents",
+    detail:
+      "Eingehende Anrufe automatisch beantworten — Termine vereinbaren, FAQs klären, qualifizierte Anfragen weiterleiten. 24/7, mehrsprachig, ohne Wartemusik.",
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+        <rect x="9" y="3" width="6" height="12" rx="3" />
+        <path d="M5 11a7 7 0 0 0 14 0" />
+        <path d="M12 18v3" />
+        <path d="M8 21h8" />
+      </svg>
+    ),
+  },
+  {
+    tag: "KI",
+    title: "Chatbots",
+    detail:
+      "KI-Assistenten für Ihre Website, die Anfragen vorqualifizieren und Routine-Fragen beantworten — bevor sie auf Ihrem Schreibtisch landen.",
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M4 5h16v11H8l-4 4V5z" />
+        <circle cx="9" cy="11" r="0.8" fill="currentColor" />
+        <circle cx="13" cy="11" r="0.8" fill="currentColor" />
+        <circle cx="17" cy="11" r="0.8" fill="currentColor" />
+      </svg>
+    ),
+  },
+  {
+    tag: "Workflow",
+    title: "Buchungssysteme",
+    detail:
+      "Online-Reservierungen, Termine und Direktbuchungen — mit Bestätigung, Erinnerung und Kalender-Sync. Ohne Telefonklingeln, ohne Doppelbuchungen.",
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+        <rect x="3.5" y="5" width="17" height="15" rx="1.5" />
+        <path d="M3.5 9h17" />
+        <path d="M8 3v4M16 3v4" />
+        <circle cx="8.5" cy="14" r="0.8" fill="currentColor" />
+        <circle cx="12" cy="14" r="0.8" fill="currentColor" />
+        <circle cx="15.5" cy="14" r="0.8" fill="currentColor" />
+      </svg>
+    ),
+  },
+  {
+    tag: "Mobile",
+    title: "App-Entwicklung",
+    detail:
+      "Native iOS- und Android-Apps oder progressive Web-Apps — für interne Tools, Kundenbindung oder neue Geschäftsmodelle. Performant und wartbar.",
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+        <rect x="6.5" y="2.5" width="11" height="19" rx="2" />
+        <path d="M10 5.5h4" />
+        <circle cx="12" cy="18.5" r="0.6" fill="currentColor" />
+      </svg>
+    ),
+  },
+];
 
 export default function About() {
   return (
@@ -81,7 +139,59 @@ export default function About() {
           </aside>
         </div>
 
-        <AboutGallery />
+        {/* what we provide */}
+        <div className="border-t hair py-12 sm:py-16 md:py-20">
+          <div className="grid grid-cols-12 gap-0">
+            <div className="col-span-12 md:col-span-7 md:pr-8">
+              <p className="mono-label text-ink-500">— Was wir bauen</p>
+              <h3 className="display-tight font-display mt-6 text-3xl leading-[1.04] tracking-tightest text-ink-900 sm:text-4xl md:text-5xl">
+                Vier Werkzeuge,
+                <br />
+                <span className="font-normal text-accent">
+                  ein Versprechen
+                </span>
+                : weniger Telefon.
+              </h3>
+            </div>
+            <div className="col-span-12 mt-6 md:col-span-4 md:col-start-9 md:mt-0">
+              <p className="text-[14.5px] leading-relaxed text-ink-600">
+                Was wir heute bauen, war vor zehn Jahren ein Nebenprojekt.
+                Heute sind es vier Werkzeuge, die wir in Produktion betreiben —
+                für Betriebe, die Anfragen lieber bearbeiten als entgegennehmen.
+              </p>
+            </div>
+          </div>
+
+          <ol className="mt-10 grid grid-cols-1 gap-0 border-t hair sm:mt-12 sm:grid-cols-2 md:grid-cols-4">
+            {offerings.map((o, i, arr) => (
+              <li
+                key={o.title}
+                className={[
+                  "flex flex-col gap-5 p-6 sm:p-8 md:p-10",
+                  i < arr.length - 1 ? "border-b hair" : "",
+                  i % 2 === 0 ? "sm:border-r hair" : "",
+                  i < arr.length - 2 ? "sm:border-b hair" : "sm:border-b-0",
+                  "md:border-b-0",
+                  i < arr.length - 1 ? "md:border-r hair" : "",
+                ].join(" ")}
+              >
+                <div className="flex items-center justify-between font-mono text-[10px] uppercase tracking-[0.18em] text-ink-400">
+                  <span>0{i + 1} / 0{arr.length}</span>
+                  <span className="text-accent">{o.tag}</span>
+                </div>
+                <div className="grid h-10 w-10 place-items-center border hair text-ink-900">
+                  <span className="block h-5 w-5">{o.icon}</span>
+                </div>
+                <h4 className="font-display text-[26px] leading-tight tracking-tight text-ink-900">
+                  {o.title}
+                </h4>
+                <p className="mt-auto text-[14px] leading-relaxed text-ink-600">
+                  {o.detail}
+                </p>
+              </li>
+            ))}
+          </ol>
+        </div>
 
         {/* closing line */}
         <div className="border-t hair py-12 sm:py-16 md:py-20">

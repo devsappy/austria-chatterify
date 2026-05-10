@@ -1,4 +1,5 @@
 import Link from "next/link";
+import MobileMenu from "./MobileMenu";
 
 const links = [
   { href: "/handwerk", label: "Handwerk", idx: "01" },
@@ -55,37 +56,7 @@ export default function Nav() {
             <span className="font-mono text-[10px] text-paper/60">↗</span>
           </a>
 
-          <details className="relative md:hidden">
-            <summary className="grid h-10 w-10 cursor-pointer list-none place-items-center border hair bg-paper text-ink-900 transition [&::-webkit-details-marker]:hidden">
-              <svg viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="1.8">
-                <path d="M3 6h18M3 12h18M3 18h18" />
-              </svg>
-            </summary>
-            <div className="absolute right-0 top-[calc(100%+1px)] z-50 w-[min(280px,calc(100vw-2rem))] border hair bg-paper shadow-lg">
-              <ul className="divide-y hair">
-                {links.map((l) => (
-                  <li key={l.href}>
-                    <a
-                      href={l.href}
-                      className="flex items-baseline justify-between gap-3 px-4 py-3 text-[14px] text-ink-800 hover:bg-ink-50"
-                    >
-                      <span>{l.label}</span>
-                      <span className="font-mono text-[10px] text-ink-400">{l.idx}</span>
-                    </a>
-                  </li>
-                ))}
-                <li className="sm:hidden">
-                  <a
-                    href="#kontakt"
-                    className="flex items-center justify-between gap-3 bg-ink-900 px-4 py-3 text-[13px] font-medium text-paper"
-                  >
-                    Intro buchen
-                    <span className="font-mono text-[10px] text-paper/60">↗</span>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </details>
+          <MobileMenu />
         </div>
       </div>
     </header>
