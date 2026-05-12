@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const offerings = [
   {
     tag: "KI",
@@ -64,7 +66,7 @@ export default function About() {
       <div className="mx-auto max-w-[1400px] px-4 sm:px-6">
         {/* header */}
         <div className="grid grid-cols-12 gap-0 border-b hair py-12 sm:py-16 md:py-24">
-          <div className="col-span-12 md:col-span-7 md:pr-8">
+          <div className="col-span-12 flex flex-col md:col-span-7 md:pr-8">
             <p className="mono-label text-ink-500">— Über uns</p>
             <h2 className="display-tight font-display mt-6 text-4xl leading-[1.02] tracking-tightest text-ink-900 sm:text-5xl md:text-6xl lg:text-7xl">
               Aus Neugier entstanden.
@@ -72,13 +74,36 @@ export default function About() {
               <span className="font-normal text-accent">Mit Sorgfalt</span>{" "}
               gewachsen.
             </h2>
-          </div>
-          <div className="col-span-12 mt-8 md:col-span-4 md:col-start-9 md:mt-0">
-            <p className="text-[15px] leading-relaxed text-ink-600">
+            <p className="mt-10 max-w-md text-[16px] leading-relaxed text-ink-700 sm:text-[17px]">
               Es begann, wie die meisten bedeutsamen Dinge beginnen — mit ein
               paar Freunden, viel Neugier und Zeit, in der wir eigentlich
               hätten schlafen sollen.
             </p>
+            <dl className="mt-auto grid grid-cols-3 gap-0 border-t hair pt-6 font-mono text-[10px] uppercase tracking-[0.18em] text-ink-500 sm:gap-4">
+              <div>
+                <dt className="text-ink-400">Atelier</dt>
+                <dd className="mt-1 text-ink-700">Wien · München</dd>
+              </div>
+              <div>
+                <dt className="text-ink-400">Seit</dt>
+                <dd className="mt-1 text-ink-700">2014</dd>
+              </div>
+              <div>
+                <dt className="text-ink-400">Fokus</dt>
+                <dd className="mt-1 text-ink-700">DACH-Raum</dd>
+              </div>
+            </dl>
+          </div>
+          <div className="col-span-12 mt-8 md:col-span-4 md:col-start-9 md:mt-0">
+            <div className="relative aspect-[4/5] overflow-hidden border hair bg-ink-50">
+              <Image
+                src="/discrete.png"
+                alt="Werkstatt — sorgfältig, leise, verlässlich"
+                fill
+                sizes="(min-width: 768px) 30vw, 100vw"
+                className="object-contain p-1"
+              />
+            </div>
           </div>
         </div>
 

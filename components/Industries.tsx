@@ -49,6 +49,14 @@ const industries = [
     points: ["Online-Termine", "Team-Seiten", "Mobile Karte"],
     image: "/hairdresser.jpg",
   },
+  {
+    idx: "VII",
+    title: "Hotels · Pensionen",
+    blurb:
+      "Direktbuchung über die eigene Website, Zimmer-Galerien, Mehrsprachigkeit — weniger OTA-Provision.",
+    points: ["Direktbuchung", "Zimmer-Galerie", "DE · EN · IT"],
+    image: "/Deutschland.jpg",
+  },
 ];
 
 export default function Industries() {
@@ -87,13 +95,15 @@ export default function Industries() {
 
               <div className="col-span-3 sm:col-span-2">
                 <div className="relative aspect-[9/16] w-full overflow-hidden border hair bg-ink-100">
-                  <Image
-                    src={i.image}
-                    alt={i.title}
-                    fill
-                    sizes="(min-width: 768px) 200px, 30vw"
-                    className="object-cover transition duration-500 group-hover:scale-[1.04]"
-                  />
+                  {i.image ? (
+                    <Image
+                      src={i.image}
+                      alt={i.title}
+                      fill
+                      sizes="(min-width: 768px) 200px, 30vw"
+                      className="object-cover transition duration-500 group-hover:scale-[1.04]"
+                    />
+                  ) : null}
                 </div>
               </div>
 

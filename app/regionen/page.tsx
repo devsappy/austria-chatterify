@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import PageShell from "@/components/PageShell";
 import Breadcrumb from "@/components/Breadcrumb";
 import { CITIES, COUNTRY_LABEL, SITE, byCountry } from "@/lib/seo-data";
@@ -33,8 +34,8 @@ export default function RegionenPage() {
       <section className="border-b hair">
         <div className="mx-auto max-w-[1400px] px-6">
           <div className="grid grid-cols-12 gap-0 border-b hair py-14 md:py-24">
-            <div className="col-span-12 md:col-span-9">
-              <h1 className="display-tight font-display text-5xl leading-[1.0] tracking-tightest text-ink-900 sm:text-7xl md:text-[112px]">
+            <div className="col-span-12 md:col-span-8 md:pr-8">
+              <h1 className="display-tight font-display text-5xl leading-[1.0] tracking-tightest text-ink-900 sm:text-7xl md:text-[96px] lg:text-[112px]">
                 Webdesign in{" "}
                 <span className="font-normal text-accent">Österreich</span>
                 <br />& <span className="font-normal text-accent">Deutschland</span>.
@@ -47,6 +48,24 @@ export default function RegionenPage() {
                 und wie die Zusammenarbeit abläuft.
               </p>
             </div>
+            <aside className="col-span-12 mt-12 md:col-span-4 md:mt-0">
+              <div className="frame p-5 sm:p-6">
+                <div className="relative aspect-[4/5] overflow-hidden border hair bg-ink-50">
+                  <Image
+                    src="/europe.png"
+                    alt="Europa-Karte mit Österreich und Deutschland"
+                    fill
+                    sizes="(min-width: 768px) 30vw, 100vw"
+                    className="object-contain p-1"
+                  />
+                </div>
+                <p className="mono-label mt-6 text-ink-500">— DACH-Raum</p>
+                <p className="mt-3 text-[14px] leading-relaxed text-ink-700">
+                  {CITIES.length} Städte. Zwei Länder. Eine Sprache, die wir
+                  sprechen.
+                </p>
+              </div>
+            </aside>
           </div>
 
           {[["AT", at], ["DE", de]].map(([country, list]) => (

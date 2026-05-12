@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import PageShell from "@/components/PageShell";
 import Breadcrumb from "@/components/Breadcrumb";
 import PainPoints from "@/components/PainPoints";
@@ -77,7 +78,16 @@ export default function GastronomiePage() {
 
             <aside className="col-span-12 mt-12 md:col-span-4 md:mt-0 md:pl-8">
               <div className="frame p-5 sm:p-6">
-                <p className="mono-label text-ink-500">
+                <div className="relative aspect-[4/5] overflow-hidden border hair bg-ink-50">
+                  <Image
+                    src="/digital.png"
+                    alt="Digitale Reservierungen und Bestellungen für Gastronomie"
+                    fill
+                    sizes="(min-width: 768px) 30vw, 100vw"
+                    className="object-contain p-1"
+                  />
+                </div>
+                <p className="mono-label mt-6 text-ink-500">
                   — Service heute, 19:00
                 </p>
                 <ul className="mt-5 space-y-3 text-[14px] leading-relaxed text-ink-700">
