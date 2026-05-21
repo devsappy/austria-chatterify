@@ -1,3 +1,5 @@
+import { SITE } from "@/lib/seo-data";
+
 const BOOKING_URL = "https://termine.od-solution.com/#/211207000000081008";
 
 export default function Contact() {
@@ -21,10 +23,10 @@ export default function Contact() {
 
             <dl className="mt-10 grid grid-cols-1 gap-0 border-t border-white/10 sm:mt-14">
               {[
-                ["E-Mail", "hallo@handwerk-atelier.eu", "mailto:hallo@handwerk-atelier.eu"],
+                ["E-Mail", SITE.email, `mailto:${SITE.email}`],
                 ["Telefon · AT", "+43 1 234 5678", "tel:+4312345678"],
                 ["Telefon · DE", "+49 89 123 456", "tel:+4989123456"],
-                ["Atelier", "Neubaugasse 12 · 1070 Wien", null],
+                ["Standort", "Neubaugasse 12 · 1070 Wien", null],
               ].map(([k, v, href]) => (
                 <div
                   key={k}

@@ -81,7 +81,7 @@ export default function About() {
             </p>
             <dl className="mt-auto grid grid-cols-3 gap-0 border-t hair pt-6 font-mono text-[10px] uppercase tracking-[0.18em] text-ink-500 sm:gap-4">
               <div>
-                <dt className="text-ink-400">Atelier</dt>
+                <dt className="text-ink-400">Team</dt>
                 <dd className="mt-1 text-ink-700">Wien · München</dd>
               </div>
               <div>

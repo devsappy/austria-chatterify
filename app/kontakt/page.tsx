@@ -6,12 +6,12 @@ import { SITE } from "@/lib/seo-data";
 
 export const metadata: Metadata = {
   title:
-    "Kontakt — Erstgespräch buchen · Handwerk · Atelier · Wien & München",
+    "Kontakt — Erstgespräch buchen · Handwerker Auftritt · München & Wien",
   description:
-    "Direkter Kontakt zum Atelier in Wien und München. Erreichen Sie uns per E-Mail, Telefon oder buchen Sie ein 20-minütiges Erstgespräch — unverbindlich und kostenlos.",
+    "Direkter Kontakt zu Handwerker Auftritt in München und Wien. Erreichen Sie uns per E-Mail, Telefon oder buchen Sie ein 20-minütiges Erstgespräch — unverbindlich und kostenlos.",
   alternates: { canonical: "/kontakt" },
   openGraph: {
-    title: "Kontakt — Handwerk · Atelier",
+    title: "Kontakt — Handwerker Auftritt",
     description:
       "Erreichen Sie uns per E-Mail, Telefon oder buchen Sie ein 20-minütiges Erstgespräch — unverbindlich und kostenlos. Wien · München.",
     url: `${SITE.url}/kontakt`,

@@ -1,3 +1,5 @@
+import { SITE } from "@/lib/seo-data";
+
 export default function Footer() {
   const year = new Date().getFullYear();
 
@@ -16,17 +18,17 @@ export default function Footer() {
                 </svg>
               </span>
               <span className="font-display text-[18px] tracking-tight">
-                Handwerk · Atelier
+                {SITE.name}
               </span>
             </div>
             <address className="mt-5 space-y-1 text-[14px] not-italic leading-relaxed text-paper/75">
               <div>Neubaugasse 12 · 1070 Wien</div>
               <div>
                 <a
-                  href="mailto:hallo@handwerk-atelier.eu"
+                  href={`mailto:${SITE.email}`}
                   className="hover:text-paper"
                 >
-                  hallo@handwerk-atelier.eu
+                  {SITE.email}
                 </a>
               </div>
             </address>
@@ -68,7 +70,7 @@ export default function Footer() {
             </a>
             <div className="mt-5 flex gap-2 md:justify-end">
               <a
-                href="https://github.com/handwerk-atelier"
+                href={SITE.social.github}
                 aria-label="GitHub"
                 className="grid h-8 w-8 place-items-center border border-paper/20 transition hover:border-paper hover:text-paper"
               >
@@ -77,7 +79,7 @@ export default function Footer() {
                 </svg>
               </a>
               <a
-                href="https://www.linkedin.com/company/handwerk-atelier"
+                href={SITE.social.linkedin}
                 aria-label="LinkedIn"
                 className="grid h-8 w-8 place-items-center border border-paper/20 transition hover:border-paper hover:text-paper"
               >
@@ -86,7 +88,7 @@ export default function Footer() {
                 </svg>
               </a>
               <a
-                href="https://www.instagram.com/handwerk.atelier"
+                href={SITE.social.instagram}
                 aria-label="Instagram"
                 className="grid h-8 w-8 place-items-center border border-paper/20 transition hover:border-paper hover:text-paper"
               >
@@ -102,7 +104,7 @@ export default function Footer() {
 
         {/* bottom legal row */}
         <div className="flex flex-col gap-2 border-t border-paper/10 py-5 font-mono text-[10px] uppercase tracking-[0.16em] text-paper/55 sm:text-[11px] md:flex-row md:items-center md:justify-between">
-          <span>© {year} Handwerk · Atelier GmbH</span>
+          <span>© {year} {SITE.name} GmbH</span>
           <span className="flex items-center gap-2">
             <span className="tick h-1.5 w-1.5 flex-none rounded-full bg-paper" />
             DSGVO · EU-Hosting · Wien · München

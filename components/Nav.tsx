@@ -23,11 +23,11 @@ export default function Nav() {
           </span>
           <span className="flex min-w-0 items-baseline gap-1 sm:gap-1.5">
             <span className="truncate font-display text-[15px] tracking-tight text-ink-900 sm:text-[18px]">
-              Handwerk
+              Handwerker
             </span>
             <span className="text-accent">·</span>
             <span className="truncate font-display text-[15px] tracking-tight text-ink-700 sm:text-[18px]">
-              Atelier
+              Auftritt
             </span>
           </span>
         </Link>

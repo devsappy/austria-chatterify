@@ -18,6 +18,7 @@ const mono = JetBrains_Mono({
 });
 
 const KEYWORDS = [
+  "Handwerker Auftritt", "handwerker-auftritt.de",
   "Webdesign Österreich", "Webdesign Deutschland", "Webdesign DACH",
   "Webdesign Wien", "Webdesign Graz", "Webdesign Linz", "Webdesign Salzburg",
   "Webdesign Innsbruck", "Webdesign Klagenfurt", "Webdesign München",
@@ -49,11 +50,11 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),
   title: {
     default:
-      "Handwerk · Atelier — Webdesign für lokale Betriebe in Österreich & Deutschland",
-    template: "%s · Handwerk · Atelier",
+      "Handwerker Auftritt — Webdesign für Handwerker & lokale Betriebe",
+    template: "%s · Handwerker Auftritt",
   },
   description:
-    "Webdesign & Webentwicklung für Handwerksbetriebe, Cafés, Restaurants und Hotels in Wien, Graz, Salzburg, Linz, Innsbruck, München, Berlin, Hamburg und ganz DACH. Individuell, DSGVO-konform, EU-Hosting, in 7 Tagen online.",
+    "Webdesign & Webentwicklung für Handwerksbetriebe, Cafés, Restaurants und Hotels in Deutschland, Österreich und dem DACH-Raum. Individuell, DSGVO-konform, EU-Hosting, in 7 Tagen online.",
   applicationName: SITE.name,
   keywords: KEYWORDS,
   authors: [{ name: SITE.brand, url: SITE.url }],
@@ -73,30 +74,29 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    locale: "de_AT",
-    alternateLocale: ["de_DE", "de_CH"],
+    locale: "de_DE",
+    alternateLocale: ["de_AT", "de_CH"],
     url: SITE.url,
     siteName: SITE.name,
     title:
-      "Webdesign für lokale Betriebe in Österreich & Deutschland · Handwerk · Atelier",
+      "Webdesign für Handwerker & lokale Betriebe · Handwerker Auftritt",
     description:
-      "Individuelle Websites für Installateure, Elektriker, Dachdecker, Cafés, Restaurants und Hotels im gesamten DACH-Raum. Wien · München · Berlin · Graz · Salzburg · Linz · Hamburg.",
+      "Individuelle Websites für Installateure, Elektriker, Dachdecker, Cafés, Restaurants und Hotels im gesamten DACH-Raum. München · Berlin · Hamburg · Wien · Graz · Salzburg.",
     images: [
       {
-        url: "/og.jpg",
+        url: SITE.ogImage,
         width: 1200,
         height: 630,
-        alt: "Handwerk · Atelier — Webdesign für lokale Betriebe in Österreich & Deutschland",
+        alt: "Handwerker Auftritt — Webdesign für Handwerker und lokale Betriebe",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Handwerk · Atelier — Webdesign DACH",
+    title: "Handwerker Auftritt — Webdesign DACH",
     description:
-      "Websites für Handwerker, Cafés und Restaurants in Österreich & Deutschland. Wien · München · Berlin · Graz · Salzburg.",
-    images: ["/og.jpg"],
-    creator: "@handwerk_atelier",
+      "Websites für Handwerker, Cafés und Restaurants in Deutschland & Österreich. München · Berlin · Hamburg · Wien · Graz.",
+    images: [SITE.ogImage],
   },
   robots: {
     index: true,
@@ -110,20 +110,13 @@ export const metadata: Metadata = {
       "max-video-preview": -1,
     },
   },
-  verification: {
-    google: "google-site-verification-token-goes-here",
-    other: {
-      "msvalidate.01": ["bing-site-verification-token"],
-    },
-  },
   other: {
-    // Geo meta tags — AT primary, DE secondary. Search engines pick these up for regional relevance.
-    "geo.region": "AT-9",
-    "geo.placename": "Wien, Österreich",
-    "geo.position": `${SITE.addressAT.lat};${SITE.addressAT.lon}`,
-    ICBM: `${SITE.addressAT.lat}, ${SITE.addressAT.lon}`,
+    "geo.region": "DE-BY",
+    "geo.placename": "München, Deutschland",
+    "geo.position": `${SITE.addressDE.lat};${SITE.addressDE.lon}`,
+    ICBM: `${SITE.addressDE.lat}, ${SITE.addressDE.lon}`,
     "DC.language": "de",
-    "DC.coverage": "Österreich, Deutschland, DACH",
+    "DC.coverage": "Deutschland, Österreich, DACH",
     "DC.subject":
       "Webdesign, Webentwicklung, Lokales SEO, Handwerk, Gastronomie",
   },
@@ -136,7 +129,7 @@ export default function RootLayout({
 }) {
   return (
     <html
-      lang="de-AT"
+      lang="de-DE"
       className={`${raleway.variable} ${mono.variable}`}
     >
       <body className="font-sans">

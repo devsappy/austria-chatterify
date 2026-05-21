@@ -1,13 +1,20 @@
 export const SITE = {
-  name: "Handwerk · Atelier",
-  brand: "Handwerk Atelier",
-  url: "https://handwerk-atelier.eu",
-  email: "hallo@handwerk-atelier.eu",
+  name: "Handwerker Auftritt",
+  brand: "Handwerker Auftritt",
+  url: "https://handwerker-auftritt.de",
+  email: "hallo@handwerker-auftritt.de",
+  social: {
+    linkedin: "https://www.linkedin.com/company/handwerker-auftritt",
+    instagram: "https://www.instagram.com/handwerker.auftritt",
+    github: "https://github.com/handwerker-auftritt",
+  },
+  ogImage: "/opengraph-image",
+  logo: "/icon.svg",
   phoneAT: "+43 1 234 5678",
   phoneDE: "+49 89 123 456",
-  locale: "de-AT",
+  locale: "de-DE",
   headline:
-    "Webdesign & Webentwicklung für lokale Betriebe in Österreich und Deutschland",
+    "Webdesign & Webentwicklung für lokale Betriebe in Deutschland und Österreich",
   tagline:
     "Websites für Handwerker, Gastronomen und Dienstleister — individuell, schnell, DSGVO-konform, in der EU gehostet.",
   addressAT: {

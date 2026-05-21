@@ -23,7 +23,7 @@ export default function Hero() {
             <div className="space-y-4">
               <p className="mono-label text-ink-500">— Kurzfassung</p>
               <p className="text-[15px] leading-relaxed text-ink-700">
-                Ein kleines Atelier aus Wien und München. Wir bauen sorgfältige,
+                Ein spezialisiertes Team aus München und Wien. Wir bauen sorgfältige,
                 schnelle Websites für Handwerksbetriebe, Cafés und Restaurants —
                 individuell, in der EU gehostet, in 7&nbsp;Tagen online.
               </p>

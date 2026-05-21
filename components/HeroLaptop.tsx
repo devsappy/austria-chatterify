@@ -207,7 +207,7 @@ function Laptop() {
           anchorY="middle"
           letterSpacing={-0.02}
         >
-          Handwerk · Atelier
+          Handwerker Auftritt
         </Text>
         <Text
           position={[0.97, 1.39, 0.006]}
