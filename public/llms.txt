@@ -1,0 +1,52 @@
+# Handwerker Auftritt
+
+> Webdesign- und Webentwicklungsagentur für Handwerksbetriebe, Gastronomie und lokale Dienstleister im DACH-Raum (Deutschland, Österreich, Schweiz). Spezialisiert auf Websites mit Online-Terminbuchung, vorqualifizierenden Anfrageformularen und lokalem SEO.
+
+Handwerker Auftritt baut Websites, die heiße Leads in echte Termine und Aufträge verwandeln. Schwerpunkte: Handwerk (Installateure, Elektriker, Dachdecker, Maler, Tischler, Gärtner, KFZ-Werkstätten) und Gastronomie (Cafés, Restaurants, Hotels, Pensionen). Hosting EU-konform (Frankfurt, Wien), DSGVO-konform, Launch in 7 Tagen.
+
+- Sitz: Wien (AT) und München (DE)
+- Sprache: Deutsch (de-AT, de-DE, de-CH)
+- Domain: https://handwerker-auftritt.de
+- Kontakt: hallo@handwerker-auftritt.de
+
+## Kernseiten
+
+- [Startseite](https://handwerker-auftritt.de/): Überblick über Leistungen, Prozess, Regionen und Branchen.
+- [Website für Handwerker](https://handwerker-auftritt.de/handwerk): Online-Terminbuchung, Anfrageformular, Click-to-Call, lokales SEO für Handwerksbetriebe. Primärseite für die Zielgruppe „Handwerker, Installateur, Elektriker, Dachdecker, Maler, Tischler".
+- [Website für Gastronomie](https://handwerker-auftritt.de/gastronomie): Reservierung, Speisekarte, Menüpflege, Tisch-Buchung für Cafés, Restaurants, Hotels und Pensionen.
+- [Über uns](https://handwerker-auftritt.de/ueber-uns): Team, Werte, Erfahrung.
+- [Kontakt](https://handwerker-auftritt.de/kontakt): Adressen Wien & München, Telefon AT/DE, kostenloses Erstgespräch.
+
+## Branchenseiten
+
+- [Alle Branchen](https://handwerker-auftritt.de/branchen)
+- Einzelseiten für: Installateur, Elektriker, Dachdecker, Maler, Tischler, Gärtner, KFZ, Café, Restaurant, Hotel, Pension, Friseur usw.
+
+## Regionen
+
+- [Alle Regionen](https://handwerker-auftritt.de/regionen)
+- Österreich: Wien, Graz, Linz, Salzburg, Innsbruck, Klagenfurt, Villach, Wels, St. Pölten, Dornbirn, Bregenz, Eisenstadt, Leoben.
+- Deutschland: München, Berlin, Hamburg, Frankfurt, Köln, Stuttgart, Düsseldorf und weitere Großstädte.
+
+## Was wir bauen
+
+- Website für Handwerker mit Online-Terminbuchung
+- Vorqualifizierende Anfrageformulare mit Foto-Upload
+- Click-to-Call und WhatsApp-Routing
+- Mobile-First Design (Core Web Vitals optimiert)
+- Lokales SEO inkl. Google Business Profile
+- Strukturierte Daten (LocalBusiness, Service, HowTo, FAQ)
+- DSGVO-konformes EU-Hosting
+
+## Häufige Fragen
+
+- Was kostet eine Website für Handwerker? — Festpreis nach Erstgespräch, individuell nach Umfang.
+- Wie lange dauert die Umsetzung? — Rund 7 Werktage vom Gespräch bis Live-Launch.
+- Welche Funktionen sind enthalten? — Online-Buchung, Anfrageformular, Click-to-Call, mobiloptimierte Struktur, lokales SEO.
+- Wo wird gehostet? — DSGVO-konform in der EU (Frankfurt oder Wien).
+- Bin ich nach Launch gebunden? — Nein, Sie erhalten alle Zugänge; Betreuung ist optional und kündbar.
+
+## Optional
+
+- [robots.txt](https://handwerker-auftritt.de/robots.txt)
+- [sitemap.xml](https://handwerker-auftritt.de/sitemap.xml)
