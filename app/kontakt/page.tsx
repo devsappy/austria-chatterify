@@ -8,12 +8,12 @@ export const metadata: Metadata = {
   title:
     "Kontakt — Erstgespräch buchen · Handwerker Auftritt · München & Wien",
   description:
-    "Direkter Kontakt zu Handwerker Auftritt in München und Wien. Erreichen Sie uns per E-Mail, Telefon oder buchen Sie ein 20-minütiges Erstgespräch — unverbindlich und kostenlos.",
+    "Direkter Kontakt zu Handwerker Auftritt in München und Wien. Schreiben Sie uns per E-Mail oder buchen Sie ein 20-minütiges Erstgespräch — unverbindlich und kostenlos.",
   alternates: { canonical: "/kontakt" },
   openGraph: {
     title: "Kontakt — Handwerker Auftritt",
     description:
-      "Erreichen Sie uns per E-Mail, Telefon oder buchen Sie ein 20-minütiges Erstgespräch — unverbindlich und kostenlos. Wien · München.",
+      "Schreiben Sie uns per E-Mail oder buchen Sie ein 20-minütiges Erstgespräch — unverbindlich und kostenlos. Wien · München.",
     url: `${SITE.url}/kontakt`,
   },
 };

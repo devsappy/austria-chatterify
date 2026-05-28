@@ -5,7 +5,7 @@ const links = [
   { href: "/handwerk", label: "Handwerk", idx: "01" },
   { href: "/gastronomie", label: "Gastronomie", idx: "02" },
   { href: "/regionen", label: "Regionen", idx: "03" },
-  { href: "/#ablauf", label: "Ablauf", idx: "04" },
+  { href: "/wissen", label: "Wissen", idx: "04" },
   { href: "/ueber-uns", label: "Über uns", idx: "05" },
   { href: "/kontakt", label: "Kontakt", idx: "06" },
 ];

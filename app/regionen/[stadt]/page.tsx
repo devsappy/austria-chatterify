@@ -119,14 +119,6 @@ export default function CityPage({ params }: { params: { stadt: string } }) {
               <p className="mono-label text-ink-500">Kontakt · {city.name}</p>
               <ul className="mt-5 space-y-3 text-[14.5px] text-ink-700">
                 <li>
-                  <a
-                    href={city.country === "AT" ? `tel:${SITE.phoneAT}` : `tel:${SITE.phoneDE}`}
-                    className="hover:text-accent"
-                  >
-                    {city.country === "AT" ? SITE.phoneAT : SITE.phoneDE}
-                  </a>
-                </li>
-                <li>
                   <a href={`mailto:${SITE.email}`} className="hover:text-accent">
                     {SITE.email}
                   </a>

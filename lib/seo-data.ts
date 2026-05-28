@@ -10,8 +10,6 @@ export const SITE = {
   },
   ogImage: "/opengraph-image",
   logo: "/icon.svg",
-  phoneAT: "+43 1 234 5678",
-  phoneDE: "+49 89 123 456",
   locale: "de-DE",
   headline:
     "Webdesign & Webentwicklung für lokale Betriebe in Deutschland und Österreich",

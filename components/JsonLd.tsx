@@ -40,7 +40,6 @@ export default function JsonLd() {
         name: `${SITE.brand} — Wien`,
         url: `${SITE.url}/regionen/wien`,
         image: `${SITE.url}${SITE.ogImage}`,
-        telephone: SITE.phoneAT,
         email: SITE.email,
         priceRange: "€€€",
         address: {
@@ -77,7 +76,6 @@ export default function JsonLd() {
         name: `${SITE.brand} — München`,
         url: `${SITE.url}/regionen/muenchen`,
         image: `${SITE.url}${SITE.ogImage}`,
-        telephone: SITE.phoneDE,
         email: SITE.email,
         priceRange: "€€€",
         address: {

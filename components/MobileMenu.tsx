@@ -35,7 +35,7 @@ const sections: Section[] = [
     ],
   },
   { label: "Regionen", href: "/regionen" },
-  { label: "Ablauf", href: "/#ablauf" },
+  { label: "Wissen", href: "/wissen" },
   { label: "Über uns", href: "/ueber-uns" },
   { label: "Kontakt", href: "/kontakt" },
 ];

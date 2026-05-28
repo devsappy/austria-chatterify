@@ -15,7 +15,16 @@ Handwerker Auftritt baut Websites, die heiße Leads in echte Termine und Aufträ
 - [Website für Handwerker](https://handwerker-auftritt.de/handwerk): Online-Terminbuchung, Anfrageformular, Click-to-Call, lokales SEO für Handwerksbetriebe. Primärseite für die Zielgruppe „Handwerker, Installateur, Elektriker, Dachdecker, Maler, Tischler".
 - [Website für Gastronomie](https://handwerker-auftritt.de/gastronomie): Reservierung, Speisekarte, Menüpflege, Tisch-Buchung für Cafés, Restaurants, Hotels und Pensionen.
 - [Über uns](https://handwerker-auftritt.de/ueber-uns): Team, Werte, Erfahrung.
-- [Kontakt](https://handwerker-auftritt.de/kontakt): Adressen Wien & München, Telefon AT/DE, kostenloses Erstgespräch.
+- [Kontakt](https://handwerker-auftritt.de/kontakt): Adressen Wien & München, E-Mail-Kontakt, kostenloses Erstgespräch.
+- [Wissen](https://handwerker-auftritt.de/wissen): Praxis-Leitfäden zu Website-Kosten, Buchungstools, Google Business, DSGVO und Gastronomie-Webseiten.
+
+## Wissen / Leitfäden
+
+- [Was kostet eine Website für Handwerker 2026?](https://handwerker-auftritt.de/wissen/was-kostet-website-handwerker): Realistische Preise (1.800–9.500 € einmalig), versteckte Kosten, Vergleich Baukasten vs. Freelancer vs. Agentur.
+- [Online-Terminbuchung für Handwerker — 7 Tools im Vergleich](https://handwerker-auftritt.de/wissen/online-terminbuchung-handwerker): Calendly, Cituro, etermin, SimplyBook, TIDYCAL, Acuity und Custom-Lösungen — Preise, Stärken, Schwächen für DACH-Handwerksbetriebe.
+- [Google Business Profile für Handwerker einrichten](https://handwerker-auftritt.de/wissen/google-business-handwerker): Schritt-für-Schritt-Anleitung (Kategorie, Service-Bereich, Bewertungen, Posts) — der wichtigste Hebel für lokale Sichtbarkeit.
+- [DSGVO-Checkliste für Handwerker-Websites 2026](https://handwerker-auftritt.de/wissen/dsgvo-handwerker-website): Impressum, Datenschutz, Cookies, Hosting, AVV — was abgemahnt wird und wie man es vermeidet.
+- [Website für Gastronomie — Reservierung, QR-Karte und Conversion](https://handwerker-auftritt.de/wissen/website-gastronomie-leitfaden): Tool-Vergleich (Quandoo, OpenTable, Resmio), Speisekarten-Best-Practice, Mobile First, lokales SEO für Cafés und Restaurants.
 
 ## Branchenseiten
 

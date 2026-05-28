@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { SITE, CITIES, INDUSTRIES, allCombos } from "@/lib/seo-data";
+import { WISSEN_ARTICLES } from "@/lib/wissen-data";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
@@ -11,9 +12,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/branchen`, lastModified: now, changeFrequency: "weekly", priority: 0.9 },
     { url: `${base}/handwerk`, lastModified: now, changeFrequency: "weekly", priority: 0.95 },
     { url: `${base}/gastronomie`, lastModified: now, changeFrequency: "weekly", priority: 0.95 },
+    { url: `${base}/wissen`, lastModified: now, changeFrequency: "weekly", priority: 0.85 },
     { url: `${base}/ueber-uns`, lastModified: now, changeFrequency: "monthly", priority: 0.6 },
     { url: `${base}/kontakt`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
   ];
+
+  const wissenUrls: MetadataRoute.Sitemap = WISSEN_ARTICLES.map((a) => ({
+    url: `${base}/wissen/${a.slug}`,
+    lastModified: new Date(a.updatedAt),
+    changeFrequency: "monthly",
+    priority: 0.8,
+  }));
 
   const cityUrls: MetadataRoute.Sitemap = CITIES.map((c) => ({
     url: `${base}/regionen/${c.slug}`,
@@ -42,5 +51,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
-  return [...staticUrls, ...cityUrls, ...industryUrls, ...comboUrls];
+  return [
+    ...staticUrls,
+    ...wissenUrls,
+    ...cityUrls,
+    ...industryUrls,
+    ...comboUrls,
+  ];
 }

@@ -76,7 +76,6 @@ export default function ComboPage({
   const city = cityBySlug(params.stadt);
   if (!ind || !city) return notFound();
   const country = COUNTRY_LABEL[city.country];
-  const phone = city.country === "AT" ? SITE.phoneAT : SITE.phoneDE;
 
   const ld = {
     "@context": "https://schema.org",
@@ -192,10 +191,10 @@ export default function ComboPage({
                   Intro buchen <span>→</span>
                 </a>
                 <a
-                  href={`tel:${phone.replace(/\s/g, "")}`}
+                  href={`mailto:${SITE.email}`}
                   className="inline-flex h-12 items-center gap-3 border hair bg-paper px-6 font-mono text-[11px] uppercase tracking-[0.16em] text-ink-900 transition hover:bg-ink-50"
                 >
-                  {phone}
+                  E-Mail schreiben
                 </a>
               </div>
             </div>
@@ -416,10 +415,10 @@ export default function ComboPage({
                   Intro buchen <span>→</span>
                 </a>
                 <a
-                  href={`tel:${phone.replace(/\s/g, "")}`}
+                  href={`mailto:${SITE.email}`}
                   className="inline-flex h-12 items-center gap-3 border border-white/20 bg-transparent px-6 font-mono text-[11px] uppercase tracking-[0.18em] text-paper transition hover:bg-white/10"
                 >
-                  {phone}
+                  E-Mail schreiben
                 </a>
               </div>
             </div>

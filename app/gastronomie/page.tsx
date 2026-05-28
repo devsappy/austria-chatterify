@@ -7,6 +7,7 @@ import SolutionStack from "@/components/SolutionStack";
 import Process from "@/components/Process";
 import Contact from "@/components/Contact";
 import { industriesByCategory, SITE } from "@/lib/seo-data";
+import { WISSEN_ARTICLES } from "@/lib/wissen-data";
 
 export const metadata: Metadata = {
   title:
@@ -227,6 +228,62 @@ export default function GastronomiePage() {
 
       {/* Process — same as homepage */}
       <Process />
+
+      {/* Wissen cross-link — topical authority + AEO citability */}
+      <section className="border-b hair">
+        <div className="mx-auto max-w-[1400px] px-4 sm:px-6">
+          <div className="grid grid-cols-12 gap-0 border-b hair py-10 sm:py-12">
+            <div className="col-span-12 md:col-span-8">
+              <p className="mono-label text-ink-500">— Wissen für Gastronomie</p>
+              <h2 className="display-tight font-display mt-6 text-3xl leading-[1.02] tracking-tightest text-ink-900 sm:text-4xl md:text-5xl">
+                Tiefer einsteigen.
+              </h2>
+            </div>
+            <div className="col-span-12 mt-6 md:col-span-4 md:mt-0">
+              <p className="text-[14.5px] leading-relaxed text-ink-600">
+                Konkrete Leitfäden zu Reservierung, Speisekarte, lokalem SEO
+                und DSGVO — geschrieben für Inhaber, nicht für
+                Marketing-Abteilungen.
+              </p>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 gap-0 md:grid-cols-3">
+            {WISSEN_ARTICLES.filter(
+              (a) =>
+                a.category === "Gastronomie" ||
+                a.category === "SEO" ||
+                a.category === "Recht",
+            )
+              .slice(0, 3)
+              .map((a, i, arr) => (
+                <a
+                  key={a.slug}
+                  href={`/wissen/${a.slug}`}
+                  className={[
+                    "group flex flex-col gap-4 border-b hair p-6 transition-colors hover:bg-ink-900 hover:text-paper md:p-8",
+                    i < arr.length - 1 ? "md:border-r hair md:border-b-0" : "",
+                  ].join(" ")}
+                >
+                  <div className="flex items-center justify-between font-mono text-[10px] uppercase tracking-[0.18em] text-ink-400 group-hover:text-paper/60">
+                    <span>
+                      {a.category} · {a.readingMinutes} Min
+                    </span>
+                    <span className="opacity-0 transition group-hover:opacity-100">
+                      →
+                    </span>
+                  </div>
+                  <h3 className="font-display text-xl leading-tight tracking-tight md:text-2xl">
+                    {a.title}
+                  </h3>
+                  <p className="mt-auto text-[13.5px] leading-relaxed text-ink-600 group-hover:text-paper/75">
+                    {a.metaDescription}
+                  </p>
+                </a>
+              ))}
+          </div>
+        </div>
+      </section>
 
       {/* Contact */}
       <Contact />
