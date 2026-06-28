@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+import Script from "next/script";
 import { Raleway, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import JsonLd from "@/components/JsonLd";
@@ -132,6 +133,21 @@ export default function RootLayout({
       lang="de-DE"
       className={`${raleway.variable} ${mono.variable}`}
     >
+      <head>
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-BQR7HHZLFL"
+          strategy="afterInteractive"
+        />
+        <Script id="gtag-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-BQR7HHZLFL');
+          `}
+        </Script>
+      </head>
       <body className="font-sans">
         <JsonLd />
         {children}
