@@ -1,6 +1,5 @@
 import { SITE } from "@/lib/seo-data";
-
-const BOOKING_URL = "https://termine.od-solution.com/#/211207000000081008";
+import BookingForm from "@/components/BookingForm";
 
 export default function Contact() {
   return (
@@ -49,37 +48,25 @@ export default function Contact() {
           </div>
 
           <div className="col-span-12 py-12 sm:py-16 md:col-span-7 md:py-24 md:pl-12">
-            <div className="flex h-full flex-col justify-between gap-10">
+            <div className="flex h-full flex-col gap-8">
               <div className="space-y-6">
                 <p className="font-mono text-[11px] uppercase tracking-[0.16em] text-paper/60">
                   — Termin 01 · 20 Minuten · kostenlos
                 </p>
                 <h3 className="display-tight font-display text-3xl leading-[1.02] tracking-tightest text-paper sm:text-4xl md:text-5xl">
-                  Einen{" "}
-                  <span className="font-normal text-accent-300">freien Termin</span>
+                  Terminanfrage{" "}
+                  <span className="font-normal text-accent-300">senden</span>
                   <br />
-                  in 30 Sekunden buchen.
+                  &amp; Slot bestätigen.
                 </h3>
                 <p className="max-w-md text-[15px] leading-relaxed text-paper/70">
-                  Der Buchungskalender öffnet sich in einem neuen Fenster.
-                  Sie sehen sofort die nächsten verfügbaren Slots und buchen
-                  mit zwei Klicks — ohne Konto, ohne Wartezeit.
+                  Schicken Sie uns Ihre Wunschuhrzeit — wir speichern Ihre
+                  Anfrage und leiten Sie anschließend zu Calendly weiter, um
+                  den Termin endgültig zu bestätigen.
                 </p>
               </div>
 
-              <a
-                href={BOOKING_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group inline-flex h-24 items-center justify-between border border-white/20 bg-paper px-6 text-ink-900 transition hover:bg-accent-300 sm:h-28"
-              >
-                <span className="text-base font-medium tracking-tight sm:text-lg">
-                  Termin buchen
-                </span>
-                <span className="font-mono text-sm text-ink-900/60 transition group-hover:translate-x-1">
-                  ↗
-                </span>
-              </a>
+              <BookingForm />
 
               <ul className="grid grid-cols-3 gap-4 border-t border-white/10 pt-6 font-mono text-[10px] uppercase tracking-[0.18em] text-paper/55">
                 <li>20 Min</li>
